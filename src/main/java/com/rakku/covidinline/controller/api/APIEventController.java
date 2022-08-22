@@ -23,7 +23,7 @@ public class APIEventController {
         return "event" + eventId;
     }
 
-    @PostMapping("/events/{eventId}")
+    @PutMapping("/events/{eventId}")
     public Boolean modifyEvent(@PathVariable Integer eventId){
         return true;
     }
