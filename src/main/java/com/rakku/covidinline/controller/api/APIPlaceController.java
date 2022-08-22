@@ -23,7 +23,7 @@ public class APIPlaceController {
         return "place" + placeId;
     }
 
-    @PostMapping("/places/{placeId}")
+    @PutMapping("/places/{placeId}")
     public Boolean modifyPlace(@PathVariable Integer placeId){
         return true;
     }
